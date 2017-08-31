@@ -1,0 +1,271 @@
+\documentclass[a0,portrait]{a0poster}
+
+\usepackage{multicol} % This is so we can have multiple columns of text side-by-side
+\columnsep=100pt % This is the amount of white space between the columns in the poster
+\columnseprule=3pt % This is the thickness of the black line between the columns in the poster
+
+\usepackage[svgnames]{xcolor} % Specify colors by their 'svgnames', for a full list of all colors available see here: http://www.latextemplates.com/svgnames-colors
+
+\usepackage{times} % Use the times font
+\usepackage{palatino} % Uncomment to use the Palatino font
+
+\usepackage{graphicx} % Required for including images
+\graphicspath{{figures/}} % Location of the graphics files
+\usepackage{booktabs} % Top and bottom rules for table
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+\usepackage{wrapfig} % Allows wrapping text around tables and figures
+\usepackage{lipsum,adjustbox}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{multirow}
+\usepackage{titlesec}
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{tikz-dependency}
+\usetikzlibrary{arrows.meta}
+\newcommand{\parser}[1]{TUPA\textsubscript{#1}}
+\captionsetup{labelformat=empty}
+
+\begin{document}
+
+% The header is divided into two boxes:
+% The first is 75% wide and houses the title, subtitle, names, university/organization and contact information
+% The second is 25% wide and houses a logo for your university/organization or a photo of you
+% The widths of these boxes can be easily edited to accommodate your content as you see fit
+
+\begin{center}
+	\veryHuge \color{NavyBlue} \textbf{The 2017 Israel Seminar of Computational
+Linguistics}
+\end{center}
+
+\vspace{1cm} % A bit of extra whitespace between the header and poster content
+\titlespacing*{\section}{0pt}{8mm}{5mm}
+%\titlespacing*{\paragraph}{0pt}{3mm}{5mm}
+
+\includegraphics{img/huji_banner.png}
+\includegraphics{img/cse_banner.png}
+
+The Annual Meeting of the Israeli Seminar on Computational Linguistics,
+ISCOL 2017, will be held on Monday, September 25, in the Computer
+Science Department of the Hebrew University of Jerusalem, the Edmond J.
+Safra Campus in Givat Ram.
+
+
+Computational Linguistics and Natural Language Processing are active
+research and development fields in Israel today, both in academia and
+industry. ISCOL is a venue for exchanging ideas, reporting on work in
+progress and established results, forming collaborations, and advancing
+connections between academia and industry. ISCOL is also a friendly
+stage for students for their first appearance in this community.
+
+\subsection*{Program}\label{program}
+
+\paragraph{09:00-09:05: Opening Words}\label{opening-words}
+
+\paragraph{09:05-10:25: Morning Session (Oral
+Presentations)}\label{morning-session-oral-presentations}
+
+\begin{itemize}
+\item
+  \textbf{Compositional Semantic Parsing of Instructions in Unseen
+  Domains}\\
+  Ofer Givoli and Roi Reichart
+\item
+  \textbf{Neural semantic parsing over multiple knowledge-bases}\\
+  Jonathan Herzig and Jonathan Berant
+\item
+  \textbf{A Consolidated Open Knowledge Representation for Multiple
+  Texts}\\
+  Rachel Wities, Vered Shwartz, Gabriel Stanovsky, Meni Adler, Ori
+  Shapira, Shyam Upadhyay, Dan Roth, Eugenio Martinez Camara, Iryna
+  Gurevych and Ido Dagan
+\item
+  \textbf{Semantically Motivated Hebrew Verb-Noun Multi-Word Expressions
+  Identification}\\
+  Chaya Liebeskind and Yaakov Hacohen-Kerner
+\end{itemize}
+
+\paragraph{10:25-11:00: Coffee Break}\label{coffee-break}
+
+\paragraph{11:00-12:00: Invited Talk by Inbal Arnon (title:
+TBA)}\label{invited-talk-by-inbal-arnon-title-tba}
+
+\paragraph{12:00-14:00: Poster Session and Light Lunch (See list of posters)}\label{poster-session-and-light-lunch-see-list-of-posters}
+
+\paragraph{14:00-14:40: An Open Discussion on the future of the Mila
+Center}\label{an-open-discussion-on-the-future-of-the-mila-center}
+
+\paragraph{14:40-16:00: Afternoon Session (Oral
+Presentations)}\label{afternoon-session-oral-presentations}
+
+\begin{itemize}
+\item
+  \textbf{Too many corrections: Semantic reference-less evaluation for
+  Grammatical Error Correction}\\
+  Leshem Choshen and Omri Abend
+\item
+  \textbf{Integrating Deep Linguistic Features in Factuality Prediction
+  over Unified Datasets}\\
+  Gabriel Stanovsky, Judith Eckle-Kohler, Yevgeniy Puzikov, Ido Dagan
+  and Iryna Gurevych
+\item
+  \textbf{ConStance: Modeling Annotation Contexts to Improve Stance
+  Classification}\\
+  Kenneth Josseph, Lisa Friedland, William Hobbs, David Lazer and Oren
+  Tsur
+\item
+  \textbf{Found in Translation: Reconstructing Phylogenetic Language
+  Trees from Translations}\\
+  Ella Rabinovich, Noam Ordan and Shuly Wintner
+\end{itemize}
+
+\paragraph{16:00-16:30: Coffee Break}\label{coffee-break-1}
+
+\paragraph{16:30-17:30: Evening Session}\label{evening-session}
+
+\begin{itemize}
+\item
+  \textbf{Controlling Linguistic Style Aspects in Neural Language
+  Generation}\\
+  Jessica Ficler and Yoav Goldberg
+\item
+  \textbf{Unsupervised Query-Focused Multi-Document Summarization}\\
+  Guy Feigenblat, Haggai Roitman, Odellia Boni and David Konopnicki
+\item
+  \textbf{Query Focused Abstractive Summarization: Adapting
+  Sequence-to-Sequence Models with Query Relevance}\\
+  Tal Baumel, Matan Eyal and Michael Elhadad
+\end{itemize}
+
+\paragraph{Poster Presentations:}\label{poster-presentations}
+
+\begin{enumerate}
+\item
+  \textbf{Towards String-to-Tree Neural Machine Translation}\\
+  Roee Aharoni and Yoav Goldberg
+\item
+  \textbf{A Transition-Based Directed Acyclic Graph Parser for Universal
+  Conceptual Cognitive Annotation}\\
+  Daniel Hershcovich, Omri Abend and Ari Rappoport
+\item
+  \textbf{Interactive Abstractive Summarization for Event News Tweets}\\
+  Ori Shapira, Hadar Ronen, Adler Meni, Yael Amsterdamer, Judit Bar-Ilan
+  and Ido Dagan
+\item
+  \textbf{Semantic helper for text compose}\\
+  Boris Pevzner
+\item
+  \textbf{Acquiring Predicate Paraphrases from News Tweets}\\
+  Vered Shwartz, Gabriel Stanovsky and Ido Dagan
+\item
+  \textbf{Learning Agreement with Deep Neural Networks}\\
+  Jean-Philippe Bernardy and Shalom Lappin
+\item
+  \textbf{Mutual Convergence of Mutlimodal Linguistic Properties in
+  Spoken Dialogue Systems}\\
+  Eran Raveh
+\item
+  \textbf{Unsupervised Event Detection in Twitter}\\
+  Yuval Shachaf, Gennadi Lembersky and Roy Klein
+\item
+  \textbf{Evaluating Semantic Parsing against a Simple Web-based
+  Question Answering Model}\\
+  Alon Talmor, Mor Geva and Jonathan Berant
+\item
+  \textbf{Semantic Structure-Based Evaluation Metrics for Sentence
+  Simplification}\\
+  Elior Sulem, Omri Abend and Ari Rappoport
+\item
+  \textbf{Recognizing Mentions of Adverse Drug Reaction in Social Media
+  Using Knowledge-Infused Recurrent Models}\\
+  Gabriel Stanovsky, Daniel Gruhl and Pablo Mendes
+\item
+  \textbf{Automatic Detection of Translation Direction}\\
+  Ilia Sominsky and Shuly Wintner
+\item
+  \textbf{Thomson Reuters Self-Service Classification}\\
+  Ehud Azikri and Hila Zarosim
+\item
+  \textbf{Interactive Semantic Parsing on Semi-Structured Tables}\\
+  Tomer Wolfson
+\item
+  \textbf{Floating Agenda Parser}\\
+  Dor Muhlgay and Jonathan Berant
+\item
+  \textbf{Reinforcing Abstractive Text Summarization with
+  Reading-Comprehension}\\
+  Matan Eyal, Tal Baumel and Michael Elhadad
+\item
+  \textbf{Improving Claim Stance Classification with Lexical Knowledge
+  Expansion and Context Utilization}\\
+  Roy Bar-Haim, Lilach Edelstein, Charles Jochim and Noam Slonim
+\item
+  \textbf{lex2vecs: Combining dictionary knowledge and word embeddings
+  for word sense disambiguation}\\
+  Morris Alper and Noam Ordan
+\item
+  \textbf{Multi-Label Classification on Patient Notes}\\
+  Tal Baumel, Jumana Nassour-Kassis, Noemie Elhadad and Michael Elhadad
+\item
+  \textbf{Crafting a lexicon of referential expressions for NLG
+  applications}\\
+  Ariel Gutman, Alexandros Andre Chaaraoui and Pascal Fleury
+\item
+  \textbf{Where's my head? Task definition, dataset and initial results
+  for fused head recovery}\\
+  Yanai Elazar and Yoav Goldberg
+\item
+  \textbf{Contextualization and Regularization of Word Embeddings for
+  Machine Comprehension}\\
+  Shimi Salant and Jonathan Berant
+\item
+  \textbf{Deep Learning for Preprocessing Historical Hebrew Texts: Error
+  Correction, Vocalization and Abbreviation Expansion}\\
+  Avi Shmidman, Shaltiel Shmidman, Moshe Koppel and Yoav Goldberg
+\item
+  \textbf{Detection of Native Language Based on Micro Messages}\\
+  Oren Tsur, Yohay Nahari and Maayan Matook
+\item
+  \textbf{Causal factors of language change under control - the case of
+  frequency bias in laws of semantic change}\\
+  Haim Dubossarsky, Eitan Grossman and Daphna Weinshall
+\item
+  \textbf{Rare word embeddings with Sub-word similarity based search:
+  better representations without more knowledge, data, or training}\\
+  Clayton Greenberg, Mittul Singh, Youssef Oualil, and Dietrich Klakow
+\end{enumerate}
+
+\subsection*{Time and Location}\label{time-and-location}
+
+Monday, September 25, 2017
+
+The Brindell and Milton Gottlieb Auditorium (\textbf{A300}),\\
+The \textbf{Rothberg} Family buildings,\\
+Rachel and Selim Benin School of Computer Science and Engineering,\\
+Edmond J. Safra Campus, Jerusalem
+
+The poster session will be held in floor 1 of the same building.
+
+\subsection*{Program Committee}\label{program-committee}
+
+Omri Abend, HUJI\\
+Jonathan Berant, TAU
+
+\subsection*{Organization Committee}\label{organization-committee}
+
+Omri Abend, HUJI\\
+Daniel Hershcovich, HUJI\\
+Elior Sulem, HUJI\\
+Leshem Choshen, HUJI
+
+\subsection*{Sponsors}\label{sponsors}
+
+\includegraphics{img/google_logo.png}\\
+\includegraphics{img/ibmresearch_logo.png}\\
+\includegraphics{img/icrici_logo.png}
+
+We also acknolwedge the support of the Edmond and Lily Safra Center for
+Brain Sciences. \includegraphics{img/elsc_logo.png}
+
+
+\end{document}
