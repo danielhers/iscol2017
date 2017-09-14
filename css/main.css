@@ -12,9 +12,16 @@ h4  {
     line-height: 180%;
 }
 
+h5 {
+    font-weight: bold;
+}
 
-
-
+body .abstract {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+}
 
 
 
