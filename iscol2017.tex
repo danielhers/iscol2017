@@ -21,8 +21,8 @@
 \usepackage{titlesec}
 \usepackage{url}
 
-\titleformat*{\section}{\huge}
-\setlength{\parindent}{0pt}
+\titleformat*{\section}{\vspace{40pt}\huge}
+%\setlength{\parindent}{0pt}
 %\setlength{\parskip}{4\bigskipamount plus \smallskipamount}
 \newcommand{\forceindent}{\leavevmode{\parindent=1em\indent}}
 
@@ -60,7 +60,7 @@
 
     }
 
-        \part*{Program}
+        \vspace{50pt}{\fontsize{70pt}{70pt}\selectfont\textbf{Program}}
 
         \section*{09:00-09:05: Opening Words}
 
@@ -120,7 +120,7 @@
         \forceindent\LARGE\textbf{More Than Words: Psycholinguistic and Computational Investigations of the Building
         Blocks of Language}\\
 
-        \section*{12:00-14:00: Poster Session and Light Lunch (see list of posters below)}
+        \section*{12:00-14:00: Poster Session and Light Lunch}
 
         \section*{14:00-14:40: An Open Discussion on the Future of the Mila Center:
         Alon Itai (chair), Shuly Wintner}
@@ -196,10 +196,13 @@
 
     \pagebreak
 
-    \section*{Poster Presentations}
+    {\fontsize{70pt}{70pt}\selectfont\textbf{Poster Presentations}}
+    \hfill
+    {\huge The 2017 Israel Seminar of Computational Linguistics}
+    \vspace{50pt}
 
     {\LARGE
-    \begin{enumerate}
+    \begin{enumerate}\setlength\itemsep{10pt}
         \item
         \textbf{Towards String-to-Tree Neural Machine Translation}\\
         Roee Aharoni and Yoav Goldberg
